@@ -1,0 +1,15 @@
+.themeChange {
+    background: red;
+    cursor: pointer;
+}
+
+:global {
+    body[data-theme='light'] {
+        --color-bg: var(--color-secondary);
+    }
+
+    body[data-theme='dark'] {
+
+        --color-bg: var(--color-first);
+    }
+}

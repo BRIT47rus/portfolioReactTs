@@ -1,8 +1,33 @@
-.header{}
-ul{
+:global {
+    body[data-theme='light'] {
+        --color-bg-invers-to:var(--color-first) ;
+    }
+
+    body[data-theme='dark'] {
+
+        --color-bg-invers-to: var(--color-secondary);
+    }
+}
+
+.header {
     display: flex;
+    justify-content: center;
+    align-items: center;
+   margin: 0 auto;
+
+
+ul {
+    display: flex;
+    justify-content: space-around;
     width: 100%;
     justify-content: center;
     align-items: center;
-    outline: 1px solid red;
+    gap: 1rem;
+    &>li{
+        background: var(--color-bg-invers-to);
+        color: var(--color-bg);
+        cursor: pointer;
+    }
+}
+
 }

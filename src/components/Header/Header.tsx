@@ -1,6 +1,7 @@
 
 
 import styles from './Header.module.scss'
+import { ThemeChange } from './ThemeChange'
 
 export const Header = () => {
     return (
@@ -11,6 +12,7 @@ export const Header = () => {
                 <li>Навыки</li>
                 <li>Место работы</li>
                 <li>Контакты</li>
+            <ThemeChange/>
             </ul>
         </header>
     )
